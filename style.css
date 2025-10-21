@@ -1,0 +1,178 @@
+/* ========================================
+   PHOTO GALLERY CSS GRID ACTIVITY
+   Complete each step below to build your gallery!
+   ======================================== */
+
+/* Basic Reset - Already done for you! */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* ========================================
+   YOUR WORK STARTS HERE! 
+   Follow directions 1-22 below
+   ======================================== */
+
+/* DIRECTION 1: Set .container display property to grid */
+.container {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+/* DIRECTION 2: Add grid-template-columns with 3 equal columns using repeat(3, 1fr) */
+
+
+/* DIRECTION 3: Add grid-template-rows: auto repeat(2, 400px) auto */
+
+
+/* DIRECTION 4: Add a gap of 20px between all grid items */
+
+
+/* DIRECTION 5: Define grid-template-areas with the layout below:
+   Row 1: "header header header"
+   Row 2: "card1 card2 card3"  
+   Row 3: "card4 card5 card6"
+   Row 4: "footer footer footer"
+*/
+
+
+/* DIRECTION 6: Add padding of 25px to .container */
+
+
+/* ========================================
+   HEADER SECTION
+   ======================================== */
+
+/* DIRECTION 7: Assign grid-area: header to the .header class */
+.header {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* DIRECTION 8: Set .header h1 font-size to 3em */
+.header h1 {
+
+}
+
+/* DIRECTION 9: Set .header p margin-top to 10px and font-size to 1.2em */
+.header p {
+
+
+}
+
+/* ========================================
+   PHOTO CARD STYLING
+   ======================================== */
+
+/* DIRECTION 10: Set .photo-card background-color to #f8f9fa */
+.photo-card {
+
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+/* DIRECTION 11: Add hover effect - set transform: scale(1.05) for .photo-card:hover */
+.photo-card:hover {
+
+}
+
+/* DIRECTION 12: Set all img elements width to 100% and height to 70% */
+img {
+
+
+}
+
+/* DIRECTION 13: Add object-fit: cover to img elements */
+img {
+
+}
+
+/* DIRECTION 14: Set .photo-info padding to 15px */
+.photo-info {
+
+    text-align: center;
+}
+
+/* DIRECTION 15: Set .photo-info h3 color to #333 and margin-bottom to 5px */
+.photo-info h3 {
+
+
+}
+
+/* DIRECTION 16: Set .photo-info p color to #666 and font-size to 0.9em */
+.photo-info p {
+
+
+}
+
+/* ========================================
+   GRID AREA ASSIGNMENTS
+   ======================================== */
+
+/* DIRECTION 17: Assign grid-area: card1 to .card1 */
+.card1 {
+
+}
+
+/* DIRECTION 18: Assign grid-area: card2 to .card2 */
+.card2 {
+
+}
+
+/* DIRECTION 19: Assign grid-area: card3 to .card3 */
+.card3 {
+
+}
+
+/* DIRECTION 20: Assign grid-area: card4 to .card4 */
+.card4 {
+
+}
+
+/* DIRECTION 21: Assign grid-area: card5 to .card5 */
+.card5 {
+
+}
+
+/* DIRECTION 22: Assign grid-area: card6 to .card6 */
+.card6 {
+
+}
+
+/* ========================================
+   FOOTER SECTION
+   ======================================== */
+
+/* DIRECTION 23: Assign grid-area: footer to .footer */
+.footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* DIRECTION 24: Set .footer p font-size to 1.1em */
+.footer p {
+
+}
+
