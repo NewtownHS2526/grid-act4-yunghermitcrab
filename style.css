@@ -29,16 +29,25 @@ body {
     margin: 0 auto;
     border-radius: 15px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:auto repeat(2, 400px) auto ;
+    gap: 20px;
+    grid-template-areas: 
+    "header header header"
+    "card1 card2 card3"
+    "card4 card5 card5"
+    "footer foooter footer";
+    padding: 25px;
 }
 
 /* DIRECTION 2: Add grid-template-columns with 3 equal columns using repeat(3, 1fr) */
 
 
-/* DIRECTION 3: Add grid-template-rows: auto repeat(2, 400px) auto */
+/*DIRECTION 3: Add grid-template-rows: auto repeat(2, 400px) auto */
 
 
 /* DIRECTION 4: Add a gap of 20px between all grid items */
-
 
 /* DIRECTION 5: Define grid-template-areas with the layout below:
    Row 1: "header header header"
@@ -49,7 +58,6 @@ body {
 
 
 /* DIRECTION 6: Add padding of 25px to .container */
-
 
 /* ========================================
    HEADER SECTION
@@ -63,17 +71,19 @@ body {
     text-align: center;
     border-radius: 10px;
     margin-bottom: 10px;
+    grid-area: header;
 }
 
 /* DIRECTION 8: Set .header h1 font-size to 3em */
 .header h1 {
-
+    font-size:3em;
 }
 
+
+
 /* DIRECTION 9: Set .header p margin-top to 10px and font-size to 1.2em */
-.header p {
-
-
+.header p {margin-top:10px;
+    font: size 1.2em;
 }
 
 /* ========================================
@@ -82,44 +92,47 @@ body {
 
 /* DIRECTION 10: Set .photo-card background-color to #f8f9fa */
 .photo-card {
-
+    background-color: #f8f9fa;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s;
+    
 }
 
 /* DIRECTION 11: Add hover effect - set transform: scale(1.05) for .photo-card:hover */
 .photo-card:hover {
-
+    transform: scale(1.05);
 }
 
 /* DIRECTION 12: Set all img elements width to 100% and height to 70% */
 img {
-
+    width: 100%;
+    height: 70%;
 
 }
 
 /* DIRECTION 13: Add object-fit: cover to img elements */
 img {
-
+    object-fit: cover;
 }
 
 /* DIRECTION 14: Set .photo-info padding to 15px */
 .photo-info {
-
+    padding: 15px;
     text-align: center;
 }
 
 /* DIRECTION 15: Set .photo-info h3 color to #333 and margin-bottom to 5px */
 .photo-info h3 {
-
-
+    color: #333;
+    margin-bottom: 5px;
 }
 
 /* DIRECTION 16: Set .photo-info p color to #666 and font-size to 0.9em */
 .photo-info p {
-
+    color: #333;
+    font-size: 0.9em;
 
 }
 
@@ -128,33 +141,34 @@ img {
    ======================================== */
 
 /* DIRECTION 17: Assign grid-area: card1 to .card1 */
-.card1 {
+.card1 { 
+    grid-area:  card1; 
 
 }
 
 /* DIRECTION 18: Assign grid-area: card2 to .card2 */
 .card2 {
-
+    grid-area: card2;
 }
 
 /* DIRECTION 19: Assign grid-area: card3 to .card3 */
 .card3 {
-
+      grid-area: card3;
 }
 
 /* DIRECTION 20: Assign grid-area: card4 to .card4 */
 .card4 {
-
+         grid-area:card4;
 }
 
 /* DIRECTION 21: Assign grid-area: card5 to .card5 */
 .card5 {
-
+     grid-area:card5;
 }
 
 /* DIRECTION 22: Assign grid-area: card6 to .card6 */
 .card6 {
-
+   grid-area:card6;
 }
 
 /* ========================================
@@ -172,7 +186,7 @@ img {
 }
 
 /* DIRECTION 24: Set .footer p font-size to 1.1em */
-.footer p {
+.footer p {font-size:1.1em;
 
 }
 
